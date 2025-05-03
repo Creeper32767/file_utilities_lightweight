@@ -32,6 +32,12 @@ xlsx_utils
     XlsxOperator
 ```
 
+## Installation
+
+```bash
+pip install file_utilities
+```
+
 ## ISSUES
 
 Please give us your ideas through the 'issues' part on GitHub.
