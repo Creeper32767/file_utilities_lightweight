@@ -30,8 +30,8 @@ class BaseJsonOperator(object):
     def search(self,
                key: str,
                default_value: Union[str, Any] = "Error",
-               verification_types: Union[set[type], tuple[type], list[type], None] = None,
-               verification_not_types: Union[set[type], tuple[type], list[type], None] = None,
+               verification_types: Union[set, tuple, list, None] = None,
+               verification_not_types: Union[set, tuple, list, None] = None,
                verification_in: Union[set, tuple, list, None] = None,
                verification_not_in: Union[set, tuple, list, None] = None
     ) -> Any:
