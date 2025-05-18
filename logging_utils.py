@@ -1,4 +1,5 @@
 from datetime import datetime
+from string import Formatter
 from os import listdir, mkdir, remove
 from os.path import abspath, exists, join
 
@@ -15,6 +16,14 @@ def get_current_datetime():
 
 def get_current_time():
     return datetime.now().strftime("%H:%M:%S")
+
+
+class SafeFormatter(Formatter):
+    def get_value(self, key, args, kwargs):
+        try:
+            return super().get_value(key, args, kwargs)
+        except (KeyError, IndexError):
+            return ""
 
 
 class Logging(object):
@@ -39,6 +48,9 @@ class Logging(object):
 
         self.remove_expired_logs()
         self.file_path = f"{abspath(join(LOG_PATH, get_current_datetime()))}.txt"
+
+        # initialize safe formatter
+        fmt = SafeFormatter()
 
     def remove_expired_logs(self):
         """
