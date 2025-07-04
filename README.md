@@ -12,7 +12,7 @@ A Python library providing a collection of helper classes and functions to strea
 
 ## About The Project
 
-`file_utilities` is designed to reduce boilerplate code when performing repetitive tasks. Whether you're handling configuration files, processing Excel data, or setting up a quick logger, this library offers simple, easy-to-use tools to get the job done faster.
+`file_utilities_lightweight` is designed to reduce boilerplate code when performing repetitive tasks. Whether you're handling configuration files, processing Excel data, or setting up a quick logger, this library offers simple, easy-to-use tools to get the job done faster.
 
 ### Key Features
 
@@ -23,10 +23,10 @@ A Python library providing a collection of helper classes and functions to strea
 
 ## Installation
 
-Install `file_utilities` directly from PyPI:
+Install `file_utilities_lightweight` directly from PyPI:
 
 ```sh
-pip install file_utilities
+pip install file_utilities_lightweight
 ```
 
 ### Requirements
@@ -43,7 +43,7 @@ Here are some quick examples of how to use the modules in this library.
 Perform common lookups in dictionaries.
 
 ```python
-from file_utilities import dict_utils
+from file_utilities_lightweight import dict_utils
 
 my_dict = {'user_id': 101, 'name': 'admin', 'role': 'admin'}
 
@@ -58,7 +58,7 @@ print(f"Key for value 'admin': {key}")
 Easily read from and write to `.json` files.
 
 ```python
-from file_utilities import json_utils
+from file_utilities_lightweight import json_utils
 
 # Create a JSON operator for 'config.json'
 json_op = json_utils.BaseJsonOperator('config.json')
@@ -99,4 +99,4 @@ Copyright © 2025 by Creeper32767
 
 Creeper32767 - [@Creeper32767](https://github.com/Creeper32767)
 
-Project Link: [https://github.com/Creeper32767/file_utilities](https://github.com/Creeper32767/file_utilities)
+Project Link: [https://github.com/Creeper32767/file_utilities_lightweight](https://github.com/Creeper32767/file_utilities_lightweight)
