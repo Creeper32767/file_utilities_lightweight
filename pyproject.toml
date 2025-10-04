@@ -1,3 +1,16 @@
+[project]
+name = "file-utilities-lightweight"
+version = "0.1.2"
+description = "A Python library providing a collection of helper classes and functions to streamline common operations with dictionaries, JSON, XLSX files, and logging."
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies = [
+    "openpyxl",
+]
+
+[project.scripts]
+file-utilities-lightweight = "file_utilities_lightweight:main"
+
 [build-system]
-requires = ["setuptools>=42", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["uv_build>=0.8.18,<0.9.0"]
+build-backend = "uv_build"
